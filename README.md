@@ -65,7 +65,11 @@ Crashed rockets are **penalized, not zeroed**. In early generations almost every
 |---|---|---|---|---|---|
 | Best fitness | 0.0064 | 0.0209 | 0.1254 | 0.6949 | 1.0 |
 
-**With a wall.** With `LIFE = 220`, a 300 px wide wall sits between the launch pad and the target. In three test runs, the population first reached fitness ≥ 0.99 around generations 40 to 50, and the third run reached 0.67 (about 1.5 px from the target) by generation 60.
+**With a wall.** A 300 px wide wall sits between the launch pad and the target (`LIFE = 300`). In the recorded run, the best fitness rose from 0.0088 in generation 1 to 0.71 by generation 10, about 1.4 px from the target. Rockets that hit the wall turn red, and the population gradually shifts to the side of the wall.
+
+| Generation | 1 | 5 | 7 | 8 | 10 |
+|---|---|---|---|---|---|
+| Best fitness | 0.0088 | 0.0167 | 0.138 | 0.4208 | 0.7132 |
 
 **Known limitation.** The best score is not monotonic: a perfect rocket can be lost in the next generation, because no individual is copied unchanged. Elitism (see Roadmap) addresses this.
 
