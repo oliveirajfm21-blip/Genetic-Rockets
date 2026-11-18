@@ -128,7 +128,7 @@ while rodando:
     tela.blit(texto, (10, 10))
     pygame.display.flip()
 
-    # 4. esperar
+    # 4 esperar
     relogio.tick(60)
 
 pygame.quit()
