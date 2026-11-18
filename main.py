@@ -72,6 +72,7 @@ def mutar(filho):
 
 pygame.init()
 tela = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Darwin Launchpad")
 relogio = pygame.time.Clock()
 fonte = pygame.font.SysFont(None, 28)
 
