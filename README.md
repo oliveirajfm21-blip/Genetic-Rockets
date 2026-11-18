@@ -1,8 +1,13 @@
-# Darwin Launchpad: a genetic algorithm that learns to fly
+<h1 align="center">Darwin Launchpad</h1>
+<p align="center"><strong>A genetic algorithm that learns to fly</strong></p>
 
 A population of 300 rockets learns, generation after generation, to reach a target and avoid an obstacle. The rockets get no rules, maps or physics hints, only selection, crossover and mutation. The project was written from scratch in Python with `pygame-ce` as a first, visual step toward a larger goal: using evolutionary optimization to design real rockets.
 
-![Evolution of the population](figures/evolution.gif)
+<p align="center">
+  <img src="figures/evolution.gif" alt="Evolution of the population" width="360">
+  <br>
+  <em>Generations 1 to 10: red dots are rockets that hit the wall.</em>
+</p>
 
 ## Goal
 
@@ -76,8 +81,8 @@ Crashed rockets are **penalized, not zeroed**. In early generations almost every
 ## How to run
 
 ```bash
-git clone https://github.com/oliveirajfm21-blip/Darwin-Launchpad.git
-cd Darwin-Launchpad
+git clone https://github.com/oliveirajfm21-blip/Genetic-Rockets.git
+cd Genetic-Rockets
 pip install -r requirements.txt
 python main.py
 ```
@@ -89,7 +94,7 @@ The terminal prints the best fitness of each generation. Parameters (`POPULATION
 ## Project structure
 
 ```
-Darwin-Launchpad/
+Genetic-Rockets/
 ├── figures/
 │   └── evolution.gif     # recording of the population learning
 ├── main.py               # simulation, genetic algorithm and rendering
